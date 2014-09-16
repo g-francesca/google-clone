@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Reset */
+
+html, body {
+	font-size: 14px;
+	font-size: 90%;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+* ::after,
+* ::before {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+header {
+	height: 2.6em;
+	padding: 0 2em
+}
+
+#main-nav {
+	float: right;
+	margin: 1.6em 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+ul li a {
+	padding: 0 0.4em;
+}
+
+#grid {
+	background: url('../img/grid.png') no-repeat;
+	background-size: 100%;
+	display: inherit;
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	margin-right: 0.6em;
+}
+
+.btn, button {
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0.65em 1em;
+	border-radius:3px;
+}
+
+#logo {
+	margin-bottom: 1em;
+}
+
+#logo img {
+	max-width: 280px;
+}
+
+a.btn-blue {
+	background-color: #4285f4;
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	text-align: center;
+	margin: auto;
+	width: 960px;
+	padding-top: 11.1em;
+}
+
+.search {
+	position: relative;
+	width: 60%;
+	margin: auto;
+}
+
+input[type=search] {
+	border: 1px solid #ddd;
+	padding: 0.38em;
+	font-size: 1.14em;
+	width: 100%;
+}
+
+input[type=search]:hover {
+	border-color:#bbb;
+}
+
+input[type=search]:focus {
+	border-color:#4285f4;
+	outline: 0;
+}
+
+.mic {
+	background: url('../img/mic.png') no-repeat 50%;
+	background-size: 80%;
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 3px;
+	right: 0;
+	opacity: 0.9;
+}
+
+button[type=submit] {
+	background-image: -webkit-linear-gradient(#efefef, #ddd);
+	background-image: -o-linear-gradient(#efefef, #ddd);
+	background-image: linear-gradient(#efefef, #ddd);
+	border: 1px solid #ccc;
+}
+
+button[type=submit]:hover, button[type=submit]:focus {
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	outline: 0;
+}
+
+#search-btn {
+	margin-top: 1em;
+}
+
+footer {
+	position: fixed;
+	bottom:0;
+	background-color: #efefef;
+	width: 100%;
+	padding: 1.4em 2em;
+	border-top: 1px solid #ddd;
+	overflow: auto;
+	zoom: 1;
+}
+
+footer nav:first-child {
+	float: left;
+}
+
+footer nav:last-child {
+	 float: right;
+}
+
